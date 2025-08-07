@@ -1,0 +1,98 @@
+/* Heading */
+.search-heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    color: rgb(227, 225, 225);
+}
+
+/* Parent wrapper: full width, vertical stack */
+.search-wrapper {
+    width: 60%;
+    max-width: 900px;
+    margin: 1rem auto; /* fixed typo */
+    background-color: #1a1a1a;
+    border-radius: 1.1rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 3px;
+}
+
+/* Search bar area: larger height */
+.search-bar-section {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 0 0; /* changed: only right padding */
+    height: 9.5rem;
+    border-bottom: 1px solid #333;
+}
+
+/* search icon ko left se margin dena */
+.search-icon {
+    color: #888;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    margin-left: 2rem; /* add this */
+}
+
+/* search input is flex:1 so it takes rest space */
+.search-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    min-width: 0;
+}
+
+
+/* Icons section: smaller height, horizontally spaced */
+.icons-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    height: 4.5rem;   /* smaller height for icons area */
+    background-color: #121212;
+}
+
+/* Left icons group */
+.icons-left {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Right icons group */
+.icons-right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* Action buttons */
+.action-btn {
+    color: #aaa !important;
+    font-size: 1.6rem !important;
+}
+
+/* Big cyan button */
+.send-btn {
+    background: #0cc4e4 !important;
+    color: #fff !important;
+    font-size: 1.7rem !important;
+    box-shadow: 0 2px 8px #0cc4e455;
+    padding: 0.5rem 0.75rem;
+}
